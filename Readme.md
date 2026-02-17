@@ -1,5 +1,7 @@
 # Table of Contents
 
+This repository contains modular learning materials on Azure integration and serverless architecture. Each module includes concepts, practical examples, and further reading—use the table below to navigate the content. Recommended flow: follow the module numbers sequentially, but each module is self-contained for quick reference.
+
 | Module No. | Module Title                                      | Link to Module                                   |
 |------------|---------------------------------------------------|--------------------------------------------------|
 | 01         | Introduction to Azure Integration & Serverless Architecture | [Module-01.md](Module-01.md)                     |
