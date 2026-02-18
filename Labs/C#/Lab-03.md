@@ -19,7 +19,13 @@ In this lab, you will create an Azure Storage Account and a Logic App that detec
 11. In the storage account, navigate to **Settings > Access keys**. Click **Show** and copy the first access key.
 12. Go to **Data storage > Containers**, click **Add Container**, enter `images` as the name, and click **Create**.
 
-## Step 2: Create a Logic App
+## Step 2: Create a Storage Queue
+
+1. In a new browser tab, navigate to your storage account.
+2. Go to **Data storage > Queues**.
+3. Click **+ Queue**, enter `storageupdates` as the name, and click **Create**.
+
+## Step 3: Create a Logic App
 
 1. In the Azure Portal, search for **Logic Apps** and click **Create**.
 2. For **Type**, select **Multi-tenant (Consumption)**.
@@ -37,7 +43,7 @@ In this lab, you will create an Azure Storage Account and a Logic App that detec
 	- Enter your **Storage account name** and **Access key**.
 	- Click **Create**.
 
-## Step 3: Add an Action to Send a Queue Message
+## Step 4: Add an Action to Send a Queue Message
 
 1. In the Logic App Designer, click the **+ New step** button.
 2. Search for **Storage queue** and select **Put a message on a queue (V2)**.
@@ -47,11 +53,6 @@ In this lab, you will create an Azure Storage Account and a Logic App that detec
    `Detected new blobs: `  
    Then use the dynamic content picker (lightning symbol) to insert the list of file names.
 
-## Step 4: Create a Storage Queue
-
-1. In a new browser tab, navigate to your storage account.
-2. Go to **Data storage > Queues**.
-3. Click **+ Queue**, enter `storageupdates` as the name, and click **Create**.
 
 ## Summary
 
