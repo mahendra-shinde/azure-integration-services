@@ -113,6 +113,6 @@ az group create --name $RG_NAME --location westus
 
 az storage account create -n $STORAGE_NAME -l westus -g $RG_NAME
 
-az functionapp create --resource-group $RG_NAME --consumption-plan -location westus --runtime dotnet --functions-version 4 --name httpfun1 --storage-account $STORAGE_NAME
+az functionapp create --resource-group $RG_NAME --consumption-plan-location westus --runtime dotnet --functions-version 4 --name httpfun1 --storage-account $STORAGE_NAME
 func azure functionapp publish httpfun1
 ```
