@@ -2,11 +2,11 @@
 
 This repository contains modular learning materials on Azure integration and serverless architecture. Each module includes concepts, practical examples, and further reading—use the table below to navigate the content. Recommended flow: follow the module numbers sequentially, but each module is self-contained for quick reference.
 
-| Module No. | Module Title                                      | Link to Module                                   |
-|------------|---------------------------------------------------|--------------------------------------------------|
+| Module No. | Module Title                                      | Link to Module                                   | Link to Demos |
+|------------|---------------------------------------------------|--------------------------------------------------|----|
 | 01         | Introduction to Azure Integration & Serverless Architecture | [Module-01.md](Module-01.md)                     |
 | 02         | Azure Logic Apps: Architecture, Models, and Advanced Integration | [Module-02.md](Module-02.md)                     |
-| 03         | Azure Functions                                   | [Module-03.md](Module-03.md)                     |
+| 03         | Azure Functions                                   | [Module-03.md](Module-03.md)                     | [C# Demo](.\Labs\C#\Lab-01.md) [Java Demo](.\Labs\Java\Lab-01.md)
 | 04         | Azure API Management                              | [Module-04.md](Module-04.md)                     |
 | 05         | Azure Service Bus                                 | [Module-05.md](Module-05.md)                     |
 | 06         | Azure Event Grid                                  | [Module-06.md](Module-06.md)                     |
