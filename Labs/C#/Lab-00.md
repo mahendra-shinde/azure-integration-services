@@ -4,7 +4,7 @@
 Learn how to connect to Azure services using the .NET SDK.
 
 ## Prerequisites
-- .NET 6.0 SDK or later
+- .NET 8.0 SDK or later
 - Azure subscription
 - Visual Studio or VS Code
 

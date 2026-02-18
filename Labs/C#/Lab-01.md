@@ -108,11 +108,11 @@ curl http://localhost:7071/api/HttpExample?name=Azure
 $RG_NAME="csharp-func-lab-rg"
 $STORAGE_NAME="mahen0101xyz"
 ##
-az login
+
 az group create --name $RG_NAME --location westus
 
 az storage account create -n $STORAGE_NAME -l westus -g $RG_NAME
 
-az functionapp create --resource-group $RG_NAME --consumption-plan-location westus --runtime dotnet --functions-version 4 --name httpfun1 --storage-account $STORAGE_NAME
+az functionapp create --resource-group $RG_NAME --consumption-plan -location westus --runtime dotnet --functions-version 4 --name httpfun1 --storage-account $STORAGE_NAME
 func azure functionapp publish httpfun1
 ```
