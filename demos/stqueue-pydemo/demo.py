@@ -1,7 +1,7 @@
 from azure.storage.queue import QueueServiceClient
 
 
-conn_string = "DefaultEndpointsProtocol=https;AccountName=appgroupbf0e;AccountKey=hBWC8sFnEN5pPAYF1gMj2WcICcYdGLejP+d2w3LyeW1793bH0sW/5gTEqjoOiEK8h2Qt8iEPubYC+ASt6gmzbg==;EndpointSuffix=core.windows.net"
+conn_string = "<storage account connection string>"
 queue_name = "orders"
 
 # Create the QueueServiceClient object which will be used to create a client for the Queue

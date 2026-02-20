@@ -1,7 +1,7 @@
 ﻿using Azure.Storage.Queues;
 using System;
 
-string connectionString = "DefaultEndpointsProtocol=https;AccountName=appgroupbf0e;AccountKey=hBWC8sFnEN5pPAYF1gMj2WcICcYdGLejP+d2w3LyeW1793bH0sW/5gTEqjoOiEK8h2Qt8iEPubYC+ASt6gmzbg==;EndpointSuffix=core.windows.net";
+string connectionString = "<storage_account_connection_string>";
 string queueName = "orders";
 
 // Create a QueueClient
