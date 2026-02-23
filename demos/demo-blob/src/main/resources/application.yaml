@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: demo-blob
+
+# Azure storage account connection string
+azure:
+  storage:
+    connection-string: "__STORAGE_CONNECTION_STRING__"
