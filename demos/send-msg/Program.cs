@@ -1,8 +1,8 @@
 ﻿using System;
 using Azure.Messaging.ServiceBus;
 
-string connectionString = "<your_service_bus_connection_string>";
-string queueName = "products";
+string connectionString = "<connection_string>";
+string queueName = "<queue_name>";
 // Create a Service Bus client
 await using var client = new ServiceBusClient(connectionString);
 // Create a sender for the queue

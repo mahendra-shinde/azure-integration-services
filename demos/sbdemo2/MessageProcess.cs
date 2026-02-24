@@ -25,8 +25,8 @@ public class MessageProcess
     /// <param name="message">The received Service Bus message containing product information.</param>
     /// <param name="messageActions">Actions for managing the Service Bus message lifecycle.</param>
     /// <returns>A task representing the asynchronous operation.</returns>
-    [Function(nameof(MessageProcessFunction))]
-    public async Task MessageProcessFunction(
+    [Function(nameof(MessageProcess))]
+    public async Task Run(
         [ServiceBusTrigger("products", Connection = "AzureWebJobsServiceBus")]
         ServiceBusReceivedMessage message,
         ServiceBusMessageActions messageActions)
