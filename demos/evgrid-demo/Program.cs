@@ -1,24 +1,24 @@
 ﻿using Azure.Messaging.EventGrid;
 
-string topicName = "news";
-string endpoint = "<GRID_HTTP_ENDPOINT>";
-string key = "<ACCESSKEY>";
+// Replace with your Event Grid topic endpoint and access key
+// Topic Endpoint format: https://<topic-name>.<region>-1.eventgrid.azure.net/api/events
+string endpoint = "topic-endpoint";
+string key = "<ACESS_KEY>";
 
 var client = new Azure.Messaging.EventGrid.EventGridPublisherClient(
-    new Uri($"https://{endpoint}/api/events?topic={topicName}"),
+    new Uri(endpoint),
     new Azure.AzureKeyCredential(key));
 
-var event1 =  new EventGridEvent(
-        subject: "New Article Published",
-        eventType: "News.ArticlePublished",
-        dataVersion: "1.0",
-        data: new
-        {
-            Title = "Azure Event Grid Simplifies Event-Driven Architectures",
-            Author = "John Doe",
-            PublishedDate = DateTime.UtcNow
-        });
+var event1 = new EventGridEvent(
+    subject: "NewArticle",
+    eventType: "News.ArticlePublished",
+    dataVersion: "1.0",
+    data: new
+    {
+        Title = "Breaking News: New Event Grid Features Released",
+        Author = "John Doe",
+        PublishedDate = DateTime.UtcNow
+    });
 
 await client.SendEventAsync(event1);
 Console.WriteLine("Event sent successfully.");
-
